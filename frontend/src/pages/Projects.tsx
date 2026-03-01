@@ -3,6 +3,7 @@ import Reveal from "../components/Reveal";
 import OutlinedCard from "../components/ProjectCards";
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
+import { Button } from "react-bootstrap";
 
 // have a page that says "join now to get started on your next big hit" and if the user is logged in, then they will be able to see their projects
 // projects will be displayed in sort of a listGroup tiles format
@@ -27,32 +28,37 @@ const Projects = () => {
       })
       .catch(() => setLoading(false));
   }, []);
-  const { user } = useAuth();
+  // const { user } = useAuth();
 
   return (
     <>
-      {user && (<span className={styles.userInfo}>Welcome back, {user.email}</span>)}
+      {/* {user && (<span className={styles.userInfo}>Welcome back, {user.email}</span>)} */}
       <Reveal>
         <>
-          <h1 className={styles.title}>HarmonyHub Projects</h1>
-          <div id="projectsScreen" className={styles.gridContainer}>
-            {loading ? (
-              <p>Loading projects...</p>
-            ) : (
-              <>
-                {projects.map((p) => (
-                  <>
-                    <div key={p.id} className={`${styles.gridItem} ${styles.id}`}>
-                      <OutlinedCard
-                        songTitle={p.name}
-                        description={p.description}
-                        artist={p.artist}
-                      />
-                    </div>
-                  </>
-                ))}
-              </>
-            )}
+          <div className={styles.projectsContainer}>
+            <h1 className={styles.title}>Projects</h1>
+            <div className={styles.buttonContainer}>
+              <Button className={styles.addButton}>Upload Project</Button>
+            </div>
+            <div id="projectsScreen" className={styles.gridContainer}>
+              {loading ? (
+                <p>Loading projects...</p>
+              ) : (
+                <>
+                  {projects.map((p) => (
+                    <>
+                      <div key={p.id} className={styles.projectCard}>
+                          <h2>{p.name}</h2>
+                          <p className={styles.artist} >{p.artist}</p>
+                          <p className={styles.description}>{p.description}</p>   
+
+                          <Button className={styles.updateBtn}>Update</Button>
+                      </div>
+                    </>
+                  ))}
+                </>
+              )}
+            </div>
           </div>
         </>
       </Reveal>

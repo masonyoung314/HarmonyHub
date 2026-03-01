@@ -41,26 +41,38 @@ const NavBar = () => {
           />
           HarmonyHub
         </Link>
+
+        <div className={styles.navbarLinks}>
+          <Link to="/" className={styles.navLink}>
+            Home
+          </Link>
+
+          <Link to="/projects" className={styles.navLink}>
+            Projects
+          </Link>
+
+          <Link to="/about" className={styles.navLink}>
+            About
+          </Link>
+        </div>
       </div>
 
-      <div className={styles.navbarLinks}>
-        <Link to="/" className={styles.navLink}>
-          Home
-        </Link>
-        <Link to="/about" className={styles.navLink}>
-          About
-        </Link>
+      <div className={styles.userEmail}>
+        
+        {user && (
+          <>
+            <div className={styles.avatar}>{user.email[0].toUpperCase()}</div>
+            <span>{user.email}</span>
+            
+          </>
+        )}
 
         {!user && (
           <Link to="/login" className={styles.navLink}>
             Login
           </Link>
         )}
-
-        <Link to="/projects" className={styles.navLink}>
-          My Projects
-        </Link>
-
+        
         {user && (
           <button
             className={styles.navLink}
@@ -70,19 +82,6 @@ const NavBar = () => {
             Logout
           </button>
         )}
-
-        <form onSubmit={handleSearch} className={styles.searchForm}>
-          <input
-            type="search"
-            placeholder="Search..."
-            className={styles.searchFormControl}
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <button className={styles.searchBtn} type="submit">
-            Search
-          </button>
-        </form>
       </div>
     </nav>
   );

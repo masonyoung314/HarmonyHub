@@ -25,7 +25,6 @@
 }
 
 .navbarLinks {
-    float: right;
     display: flex;
     gap: 2rem;
     padding-right: 1rem;
@@ -37,6 +36,32 @@
     border-radius: 20px;
     transition: background-color 0.2s;
     font-family: "Roboto", Arial;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+}
+
+.userEmail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #04AA6D;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .navBrandLink {
@@ -45,6 +70,7 @@
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: 0.5s;
+    display: flex;
 }
 
 .navBrandLink:hover {
@@ -53,6 +79,7 @@
   background-color: #04AA6D;
   color: white;
   fill: white;
+  cursor: pointer;
 }
 
 .navLink:hover {
@@ -60,43 +87,9 @@
   background-color: #04AA6D;
   border-radius: 20px;
   color: white;
-}
-
-input[type=search] {
-  transition: 0.5s;
-  border-radius: 0.1rem;
-  border: 2px solid black;
-  height: auto;
-  padding-left: 0.7rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 1rem;
-  color:#04AA6D;
-}
-
-input[type=search]:focus {
-  outline: none;
-  border:2px solid #04AA6D;
-  border-radius: 20px;
-}
-
-.searchBtn {
-  transition: 0.5s;
-  border-radius: 0.1rem;
-  border: 2px solid black;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #04AA6D;
-}
-
-.searchBtn:hover {
-  background-color: #04AA6D;
-  border-radius: 20px;
-  border:2px solid #04AA6D;
-  color: white;
   cursor: pointer;
 }
+
 
 @media (max-width: 768px) {
   .navbar {

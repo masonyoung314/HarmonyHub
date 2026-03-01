@@ -32,6 +32,7 @@ const prisma = new PrismaClient();
 const proj1 = await prisma.project.create({
   data: {
     name: "Dream of Sofi",
+    email: "masonyou@umich.edu",
     description: "Song for Sofi",
     artist: "Mason"
   }
@@ -40,6 +41,7 @@ const proj1 = await prisma.project.create({
 const proj2 = await prisma.project.create({
   data: {
     name: "Mi Amor",
+    email: "masonyou@umich.edu",
     description: "Upbeat song for Sofi",
     artist: "Mason"
   }

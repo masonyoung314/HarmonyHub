@@ -1,3 +1,13 @@
+.projectsContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
 .userInfo {
     font-family: sans-serif;
     padding-left: 1rem;
@@ -8,12 +18,29 @@
 .gridContainer {
     min-height: 100vh;
     font-family: sans-serif;
-    margin: 1rem;
+    margin: 0 auto;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates three equal-width columns */
-    grid-auto-rows: minmax(200px, auto); /* Creates two rows of specific heights */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Creates three equal-width columns */
+    gap: 2.2rem;
+    width: 90%;
+    max-width: 1400px;
+    /* grid-auto-rows: minmax(200px, auto); Creates two rows of specific heights */
     grid-gap: 20px;
+}
+
+.projectCard {
+    background: white;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.projectCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .title {
@@ -22,3 +49,29 @@
     justify-content: center;
 } 
    
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addButton {
+    text-align: center;
+    font-family: sans-serif;
+    color: #04AA6D;
+    background-color: white;
+    transition: 0.5s;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 0.5rem;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.addButton:hover {
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 20px;
+    text-decoration: underline;
+}
+

@@ -16,6 +16,7 @@ datasource db {
 
 model Project {
   id Int @id @default(autoincrement())
+  email String @default("nouser@gmail.com")
   name String 
   description String?
   artist String?

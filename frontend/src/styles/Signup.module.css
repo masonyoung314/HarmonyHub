@@ -64,6 +64,7 @@
 .submitBtn:hover {
     background-color: #028a58;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .signInBtn {
