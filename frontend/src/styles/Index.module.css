@@ -79,6 +79,7 @@ body {
     background-color: #028a58;
     border-radius: 20px;
     border-color:#028a58;
+    cursor: pointer;
 }
 
 .homeSignupPage {
@@ -97,4 +98,5 @@ body {
 
 .mediaIcon:hover {
     fill: gray;
+    cursor: pointer;
 }

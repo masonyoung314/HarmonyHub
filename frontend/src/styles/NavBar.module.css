@@ -95,6 +95,7 @@ input[type=search]:focus {
   border-radius: 20px;
   border:2px solid #04AA6D;
   color: white;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
