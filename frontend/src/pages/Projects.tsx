@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import Reveal from "../components/Reveal";
 import OutlinedCard from "../components/ProjectCards";
 import { useEffect, useState } from "react";
+import { useAuth } from "../context/AuthContext";
 
 // have a page that says "join now to get started on your next big hit" and if the user is logged in, then they will be able to see their projects
 // projects will be displayed in sort of a listGroup tiles format
@@ -26,9 +27,11 @@ const Projects = () => {
       })
       .catch(() => setLoading(false));
   }, []);
+  const { user } = useAuth();
 
   return (
     <>
+      {user && (<span className={styles.userInfo}>Welcome back, {user.email}</span>)}
       <Reveal>
         <>
           <h1 className={styles.title}>HarmonyHub Projects</h1>

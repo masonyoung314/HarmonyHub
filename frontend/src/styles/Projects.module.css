@@ -1,3 +1,10 @@
+.userInfo {
+    font-family: sans-serif;
+    padding-left: 1rem;
+    color: #04AA6D;
+    text-shadow: 0.5px 0.5px black;
+}
+
 .gridContainer {
     min-height: 100vh;
     font-family: sans-serif;
