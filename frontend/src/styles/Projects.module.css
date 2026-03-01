@@ -1,0 +1,17 @@
+.gridContainer {
+    min-height: 100vh;
+    font-family: sans-serif;
+    margin: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates three equal-width columns */
+    grid-auto-rows: minmax(200px, auto); /* Creates two rows of specific heights */
+    grid-gap: 20px;
+}
+
+.title {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+} 
+   

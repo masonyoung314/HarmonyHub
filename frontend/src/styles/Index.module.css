@@ -1,0 +1,100 @@
+body {
+    background-color: lightgray;
+    padding: 0px;
+}
+
+.homeDiv {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.advertisement {
+    color: #04AA6D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    text-shadow: 0.5px 0.5px black;
+}
+
+.advertisementContainer {
+    display: block;
+    justify-content: center;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    text-align: center;
+    
+}
+
+.signupTextContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.signupText {
+    color:#04AA6D;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(33) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.homeSignupButton {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #04AA6D; /* Green */
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.homeSignupButton:hover {
+    background-color: #028a58;
+    border-radius: 20px;
+    border-color:#028a58;
+}
+
+.homeSignupPage {
+    padding-top: 3rem;
+}
+
+.socialMediaIcons {
+    padding-top: 3rem;
+}
+
+.mediaIcon {
+    padding-left: 1rem;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.mediaIcon:hover {
+    fill: gray;
+}

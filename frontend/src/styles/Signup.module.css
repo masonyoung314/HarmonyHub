@@ -1,0 +1,88 @@
+.signupScreen {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.signupForm {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+
+    .signupHeading {
+        margin-bottom: 30px;
+    }
+
+
+    .signup {
+        padding: 1rem 2rem;
+    }
+
+    .signupFormControl {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        @include box-sizing(border-box);
+        border: 2px solid gray;
+
+        &:focus {
+            z-index: 2;
+        }
+    }
+
+    input[type="signupText"] {
+        margin-bottom: -1px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition: 0.5s;
+    }
+
+    input[type="signupPassword"] {
+        margin-bottom: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+    }
+}
+
+.submitBtn {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #028a58;
+    border-radius: 20px;
+}
+
+.signInBtn {
+    text-decoration: none;
+    color: #04AA6D;
+}
+
+.signInBtn:hover {
+    text-decoration: underline;
+}
+
+input[type=signupText]:focus {
+    outline: none;
+    border:2px solid #04AA6D;
+    border-radius: 20px;
+}
+
+input[type=signupPassword]:focus {
+    outline: none;
+    border:2px solid #04AA6D;
+    border-radius: 20px;
+}   

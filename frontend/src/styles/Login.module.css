@@ -1,0 +1,97 @@
+.loginScreen {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    min-height: 100vh;
+}
+
+.loginForm {
+    max-width: 380px;
+    padding: 15px 35px 45px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+
+    .signInHeading, .checkBox {
+        margin-bottom: 30px;
+    }
+
+
+    .signup {
+        padding: 1rem 2rem;
+    }
+
+    .checkBox {
+        font-weight: normal;
+        display: block;
+    }
+
+    .formControl {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        border: 2px solid gray;
+
+        &:focus {
+            z-index: 2;
+        }
+    }
+
+    input[type="text"] {
+        margin-bottom: -1px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition: 0.5s;
+    }
+
+    input[type="password"] {
+        margin-bottom: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        transition: 0.5s;
+    }
+}
+
+.submitBtn {
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #028a58;
+    border-radius: 20px;
+}
+
+.signupLink {
+    text-decoration: none;
+    color: #04AA6D;
+}
+
+.signupLink:hover {
+    text-decoration: underline;
+}
+
+.checkBox {
+    accent-color: #04AA6D;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 2px solid #04AA6D;
+    border-radius: 20px;
+}
+
+input[type=password]:focus {
+    outline: none;
+    border: 2px solid #04AA6D;
+    border-radius: 20px;
+}
