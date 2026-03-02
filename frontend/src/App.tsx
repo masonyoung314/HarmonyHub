@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { supabase } from "./supabaseClient";
 
 import ProtectedRoute from "./components/ProtectedRoute";
+import NewProject from "./pages/NewProject";
 
 
 
@@ -41,6 +42,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<ProtectedRoute><Projects /></ProtectedRoute>} />
+            <Route path="/projects/new" element={<ProtectedRoute><NewProject /></ProtectedRoute>} />
             <Route path="/login" element={<Login />}></Route>
             <Route path="/signup" element={<Signup />}></Route>
             <Route path="/about" element={<About />}></Route>

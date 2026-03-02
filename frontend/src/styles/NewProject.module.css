@@ -1,0 +1,103 @@
+.backBtn {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: #04AA6D;
+    transition: 0.5s;
+    justify-content: flex-start;
+}
+
+.backBtn:hover {
+    border-radius: 20px;
+    background-color: #04AA6D;
+    color: white;
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+
+.newProjectPage {
+    min-height: 100vh;
+}
+
+.uploadForm {
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.newProjectBtn {
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #04AA6D;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.newProjectBtn:hover {
+    border-radius: 20px;
+    color: white;
+    text-decoration: underline;
+    background-color: #04AA6D;
+}
+
+.uploadInfoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addFormControl {
+    border-radius: 5px;
+    border: 2px solid gray;
+    transition: 0.5s;
+    padding-left: 0.4rem;
+    justify-content: center;
+}
+
+.addFormControl:focus {
+    border-radius: 20px;
+    border: 2px solid #04AA6D;
+}
+
+.addFormControlTextArea {
+    border-radius: 5px;
+    border: 2px solid gray;
+    transition: 0.5s;
+    font-family: sans-serif;
+    padding-left: 0.4rem;
+}
+
+.addFormControlTextArea:focus {
+    border-radius: 20px;
+    border: 2px solid #04AA6D;
+    outline: none;
+}
+
+

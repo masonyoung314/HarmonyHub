@@ -22,6 +22,7 @@
   text-decoration: none;
   color: #04AA6D;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .navbarLinks {
@@ -71,6 +72,7 @@
     border-radius: 4px;
     transition: 0.5s;
     display: flex;
+    cursor: pointer;
 }
 
 .navBrandLink:hover {
@@ -79,7 +81,6 @@
   background-color: #04AA6D;
   color: white;
   fill: white;
-  cursor: pointer;
 }
 
 .navLink:hover {
@@ -87,7 +88,6 @@
   background-color: #04AA6D;
   border-radius: 20px;
   color: white;
-  cursor: pointer;
 }
 
 

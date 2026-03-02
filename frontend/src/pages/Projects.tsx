@@ -4,6 +4,7 @@ import OutlinedCard from "../components/ProjectCards";
 import { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 // have a page that says "join now to get started on your next big hit" and if the user is logged in, then they will be able to see their projects
 // projects will be displayed in sort of a listGroup tiles format
@@ -38,7 +39,7 @@ const Projects = () => {
           <div className={styles.projectsContainer}>
             <h1 className={styles.title}>Projects</h1>
             <div className={styles.buttonContainer}>
-              <Button className={styles.addButton}>Upload Project</Button>
+              <Link to="/projects/new" className={styles.addButton}>Upload Project</Link>
             </div>
             <div id="projectsScreen" className={styles.gridContainer}>
               {loading ? (
