@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <>
       {/* {user && (<span className={styles.userInfo}>Welcome back, {user.email}</span>)} */}
-      <Reveal>
+      <Reveal width="100%">
         <>
           <div className={styles.projectsContainer}>
             <h1 className={styles.title}>Projects</h1>
@@ -46,7 +46,6 @@ const Projects = () => {
               ) : (
                 <>
                   {projects.map((p) => (
-                    <>
                       <div key={p.id} className={styles.projectCard}>
                           <h2>{p.name}</h2>
                           <p className={styles.artist} >{p.artist}</p>
@@ -54,7 +53,6 @@ const Projects = () => {
 
                           <Button className={styles.updateBtn}>Update</Button>
                       </div>
-                    </>
                   ))}
                 </>
               )}
