@@ -25,6 +25,19 @@
   cursor: pointer;
 }
 
+.logOutBtn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  font-family: "Roboto", Arial;
+  text-decoration: none;
+  color: #04AA6D;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
 .navbarLinks {
     display: flex;
     gap: 2rem;
@@ -85,6 +98,13 @@
 
 .navLink:hover {
   box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1);
+  background-color: #04AA6D;
+  border-radius: 20px;
+  color: white;
+}
+
+.logOutBtn:hover {
+  /* box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.1); */
   background-color: #04AA6D;
   border-radius: 20px;
   color: white;

@@ -72,10 +72,10 @@ const NavBar = () => {
             Login
           </Link>
         )}
-        
+
         {user && (
           <button
-            className={styles.navLink}
+            className={styles.logOutBtn}
             onClick={handleLogOut}
             disabled={loading}
           >

@@ -10,6 +10,7 @@ const NewProject = () => {
     const [ songName, setSongName ] = useState("");
     const [ description, setDescription ] = useState("");
     const [ email, setEmail ] = useState("");
+    const [ files, setFiles ] = useState<File[]>([]);
 
     return (
         <>
@@ -58,6 +59,13 @@ const NewProject = () => {
                                     className={styles.addFormControl}
                                     value = {email}
                                     onChange={(e) => setEmail(e.target.value)}
+                                ></input>
+                                <input
+                                    type="file"
+                                    accept="audio/*"
+                                    multiple
+                                    onChange={(e) => setFiles(Array.from(e.target.files))}
+                                    className={styles.addFormControlFiles}
                                 ></input>
                                 <button type="submit" className={styles.newProjectBtn}>Upload Project</button>
                             </form>

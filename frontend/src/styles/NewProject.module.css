@@ -38,8 +38,8 @@
     border-radius: 5px;
     border: 2px solid black;
     margin-top: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
     text-align: center;
     justify-content: center;
 }
@@ -98,6 +98,20 @@
     border-radius: 20px;
     border: 2px solid #04AA6D;
     outline: none;
+}
+
+.addFormControlFiles {
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 2px solid gray;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.addFormControlFiles:hover {
+    background-color: #04AA6D;
+    border-radius: 20px;
 }
 
 
