@@ -20,10 +20,12 @@
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Creates three equal-width columns */
+    grid-template-rows: repeat(auto-fit, minmax(280px, 0.35fr));
     gap: 2.2rem;
     max-width: 1400px;
     /* grid-auto-rows: minmax(200px, auto); Creates two rows of specific heights */
     grid-gap: 20px;
+    row-gap: 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -35,10 +37,12 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.07);
     transition: 0.3s ease;
     text-align: center;
+    height: 15rem;
+    overflow: auto;
 }
 
 .projectCard:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 

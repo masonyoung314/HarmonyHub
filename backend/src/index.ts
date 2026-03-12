@@ -53,3 +53,7 @@ app.get('/api/projects', async (__, res) => {
     });
     res.json(projects);
 });
+
+// const deletedProjects = await prisma.project.deleteMany({});
+// console.log(deletedProjects);
+
